@@ -1,0 +1,7 @@
+version: '3'
+services:
+  transcriber:
+    build: ./docker/whisper_local
+    env_file: .env
+    ports:
+      - "8000:8000"
